@@ -1,0 +1,33 @@
+service: habi-test-python
+frameworkVersion: "3"
+
+useDotenv: true
+
+plugins:
+  - serverless-offline
+
+custom:
+  TimeOut: 30
+  stage: ${sls:stage}
+
+  HOST: ${env:HOST}
+  USER: ${env:USER}
+  PASS: ${env:PASS}
+  SCHEMA: ${env:SCHEMA}
+  PORT: ${env:PORT}
+
+provider:
+  name: aws
+  runtime: python3.8
+  stage: ${opt:stage, "dev"}
+  timeout: ${self:custom.TimeOut}
+
+functions:
+  Property:
+    name: ${self:service}-Property-${self:custom.stage}
+    handler: handlers/PropertyHandler.get_property
+    timeout: ${self:custom.TimeOut}
+    events:
+      - http:
+          path: /get-property
+          method: get
