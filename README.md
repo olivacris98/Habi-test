@@ -30,7 +30,7 @@ This repo was created with the purpose of showing my skills with the python prog
 
 ## install
 
-- clone this repo: [!(https://github.com/olivacris98/Habi-test.git)].
+- clone this repo: [!(https://github.com/olivacris98/habi-test.git)].
 - install dependencies: [here](#dependencies)
 - configure vars environment (.env file)
 - install a local environment like virtualenv [!(https://virtualenv.pypa.io/en/latest/installation.html)] ## free content for reader don't infringe political of copy right
@@ -86,7 +86,7 @@ to use dependencies node can run
 ## dependencies
 must be installed on your local
 - python 3.10 or 3.8 [install](https://www.python.org/downloads/release/python-31011/)
-- node js install: [install]((https://nodejs.org/en/blog/release/v16.14.0)).
+- node js install: [install](https://nodejs.org/en/blog/release/v16.14.0).
 - serverless global or in directory: [install](https://www.serverless.com/framework/docs/getting-started)
 
 
@@ -245,12 +245,14 @@ Rta/
 Denormalización: En algunos casos, la denormalización selectiva puede mejorar el rendimiento al evitar operaciones costosas de unión de tablas, un ejemplo claro seria, la no normalizacion que hay entre las tablas inmbuebles (property)
 y la tabla historia de estados (status_history) añadiendole así la columna status_id a la tabla property de tal manera que al hacer un join sea directo ganando milisegundos de velocidad, y no realizar extra condiciones al tratar de buscar el estado actual de este.
 
-puedes ver el diagrama relacional aqui [here](https://drive.google.com/file/d/17CX_WyiKfIA02BVN_gzazHpfLb5Jd4k4/view?usp=sharing)
+puedes ver el diagrama relacional aqui [here](https://drive.google.com/file/d/1J-uYgLQTEnBXPc19g4SlAPt0lykhm1kt/view?usp=sharing)
 
 
 ## words of appreciation
-La prueba solo se hizo con la finalidad de demostrar los conocimientos tecnicos en el lenguaje python usando mysql serverless como framework
-las clases, metodos declarados realizados en ingles al idioma con el que están creado las tablas en la base de datos "habi"
+La prueba solo se hizo con la finalidad de demostrar los conocimientos tecnicos en el lenguaje python usando mysql serverless como framework.
+las clases, metodos declarados, incluso este readme, fueron realizados en ingles al idioma con el que están creado las tablas en la base de datos "habi".
+
+¡Gracias por el tiempo puesto en este test!
 
 
 ## License
