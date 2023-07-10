@@ -14,6 +14,9 @@ venv/
 lib64/
 parts/
 sdist/
+Classes/__pycache__/
+Utils/__pycache__/
+handlers/__pycache__/
 .vscode
 var/
 package-lock.json

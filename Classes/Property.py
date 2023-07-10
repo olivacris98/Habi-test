@@ -13,7 +13,7 @@ class Property(Abstract):
     def get(self, event) -> dict:
         """
         get all property by params sended by request or data json
-        only by status (en_)
+        only by status (pre_venta, en_venta,vendido )
             (this params be contained in database)
         Args:
             event (dict): The event object.

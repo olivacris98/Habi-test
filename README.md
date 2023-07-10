@@ -26,6 +26,7 @@ This repo was created with the purpose of showing my skills with the python prog
 - we can review the install [here](#install)
 - we can review the structure of this project [here](#Structure)
 - you can see the database documentation [here](#Databases)
+- extra points [here](#explain)
 
 ## install
 
@@ -230,3 +231,27 @@ CREATE TABLE `reaction_property_history` (
 
 
 ```
+
+
+## explain
+
+Pregunta:
+Proponer un mejor modelo de la estructura actual de base de datos, con el objetivo de
+mejorar la velocidad de las consultas, se espera un diagrama y la explicación de porque
+lo modelaste de esa forma:
+
+Rta/
+
+Denormalización: En algunos casos, la denormalización selectiva puede mejorar el rendimiento al evitar operaciones costosas de unión de tablas, un ejemplo claro seria, la no normalizacion que hay entre las tablas inmbuebles (property)
+y la tabla historia de estados (status_history) añadiendole así la columna status_id a la tabla property de tal manera que al hacer un join sea directo ganando milisegundos de velocidad, y no realizar extra condiciones al tratar de buscar el estado actual de este.
+
+puedes ver el diagrama relacional aqui [here](https://drive.google.com/file/d/17CX_WyiKfIA02BVN_gzazHpfLb5Jd4k4/view?usp=sharing)
+
+
+## words of appreciation
+La prueba solo se hizo con la finalidad de demostrar los conocimientos tecnicos en el lenguaje python usando mysql serverless como framework
+las clases, metodos declarados realizados en ingles al idioma con el que están creado las tablas en la base de datos "habi"
+
+
+## License
+Cristian livan oliva castro 2023

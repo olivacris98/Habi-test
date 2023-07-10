@@ -31,3 +31,12 @@ functions:
       - http:
           path: /get-property
           method: get
+
+  BlockOperation:
+    name: ${self:service}-Block-Operation-${self:custom.stage}
+    handler: handlers/BlockNumberHandler.block_operation
+    timeout: ${self:custom.TimeOut}
+    events:
+      - http:
+          path: /block-operation
+          method: post
